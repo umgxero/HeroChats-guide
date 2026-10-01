@@ -4,935 +4,226 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#09090b">
-  <meta name="description" content="Hero Chats — Ultra-low latency, peer-to-peer messaging and HD encrypted calls by UMG. One-click direct APK install and interactive 3D setup guide.">
-  <meta name="keywords" content="Hero Chats, Hero-Chats.apk, UMG protocol, encrypted messaging, direct apk, Android chat app">
-  <title>Hero Chats | Direct Encrypted Messaging & Voice Protocol</title>
+  <meta name="description" content="Hero Chats — Encrypted peer-to-peer messaging and HD calls by UMG.">
+  <title>Hero Chats | Private Messaging Redefined</title>
 
-  <!-- Favicon using extracted launcher icon -->
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="extracted_assets/ic_launcher_round.png">
 
-  <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Vendor Scripts (Local Fallback & High Reliability) -->
-  <script src="vendor/three.min.js"></script>
-  <script src="vendor/OrbitControls.js"></script>
-  <script src="vendor/qrcode.min.js"></script>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- =========================================================================
-       STICKY NAVIGATION
-       ========================================================================= -->
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="container nav-container">
-      <div class="nav-brand">
-        <div class="nav-brand-logo">
-          <img src="extracted_assets/logo.svg" alt="Hero Chats Logo">
-        </div>
-        <div class="nav-brand-text">
-          HERO <span>CHATS</span>
-          <span class="tech-chip live" style="margin-left: 8px; font-size: 10px;">v1.0.4</span>
-        </div>
-      </div>
+    <div class="container header-inner">
+      <a href="#hero" class="nav-brand">
+        <img src="extracted_assets/ic_launcher_round.png" alt="Hero Chats Logo">
+        <span>HERO CHATS</span>
+      </a>
 
       <nav>
         <ul class="nav-menu" id="site-nav-menu">
-          <li><a href="#hero" class="nav-link">Overview</a></li>
-          <li><a href="#setup-procedure" class="nav-link">3D Setup Guide</a></li>
-          <li><a href="#benefits" class="nav-link">User Benefits</a></li>
-          <li><a href="#features" class="nav-link">Core Features</a></li>
-          <li><a href="#admin-support" class="nav-link">Admin & Support</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="nav-actions">
-        <a href="https://hero-chats.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
-          Web Portal ↗
-        </a>
-        <button class="btn btn-primary btn-sm" data-trigger-download>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Install .APK (29.5 MB)
-        </button>
-        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </button>
-      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
     </div>
   </header>
 
-  <!-- =========================================================================
-       HERO SECTION WITH 3D INTERACTIVE SMARTPHONE
-       ========================================================================= -->
-  <section class="hero-section" id="hero">
-    <div class="container hero-grid">
-      
-      <!-- Left Editorial Column -->
-      <div class="hero-content">
-        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          <span class="tech-chip live">STABLE BUILD · 29.46 MB</span>
-          <span class="tech-chip">SHA-256 SIGNED</span>
-          <span class="tech-chip">P2P PROTOCOL</span>
-        </div>
+  <main>
 
-        <h1 class="hero-headline">
-          The Direct, Unthrottled <br>
-          <span class="highlight">Messaging Engine.</span>
-        </h1>
-
-        <p class="hero-description">
-          Hero Chats delivers true peer-to-peer encrypted messaging, sub-20ms HD voice and video calls, and mutual community channels. Distributed directly via verified APK with zero surveillance, zero app store gatekeeping, and zero telemetry.
-        </p>
-
-        <!-- CTA Matrix -->
-        <div class="hero-cta-matrix">
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <h1>Private Messaging, <span class="highlight">Redefined.</span></h1>
+        <p>Encrypted peer-to-peer messaging and crystal-clear HD voice & video calls. No tracking, no ads, no compromises.</p>
+        <div class="hero-cta">
           <button class="btn btn-primary btn-lg" data-trigger-download>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            1-Click Install Hero-Chats.apk
+            Download APK
           </button>
-          
-          <a href="#setup-procedure" class="btn btn-secondary btn-lg">
-            3D Setup Walkthrough ↓
-          </a>
-
-          <a href="#download" class="btn btn-outline btn-lg">
-            Scan Phone QR
+          <a href="https://hero-chats.vercel.app" class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">
+            Open Web App ↗
           </a>
         </div>
+      </div>
+    </section>
 
-        <!-- Telemetry Data Strip -->
-        <div class="hero-telemetry-strip">
-          <div class="telemetry-item">
-            <span class="telemetry-label">Package Identity</span>
-            <span class="telemetry-value">com.herochats.app</span>
+    <!-- FEATURES -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Hero Chats?</h2>
+          <p>Everything you need for private, fast communication.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>End-to-End Encryption</h3>
+            <p>Your messages are secured with military-grade encryption. Zero telemetry, zero data harvesting.</p>
           </div>
-          <div class="telemetry-item">
-            <span class="telemetry-label">Direct Build Size</span>
-            <span class="telemetry-value accent">29.46 MB</span>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <h3>HD Voice & Video Calls</h3>
+            <p>Crystal-clear peer-to-peer calls with ultra-low latency. No server middleman.</p>
           </div>
-          <div class="telemetry-item">
-            <span class="telemetry-label">Target Architecture</span>
-            <span class="telemetry-value">Universal (Android 8+)</span>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </div>
+            <h3>File Sharing</h3>
+            <p>Send photos, videos, and documents without compression or size limits.</p>
           </div>
-          <div class="telemetry-item">
-            <span class="telemetry-label">Network Latency</span>
-            <span class="telemetry-value accent">&lt; 18ms WebRTC</span>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Cross-Platform</h3>
+            <p>Android APK + web app. Stay connected seamlessly across all your devices.</p>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Right 3D Interactive Smartphone Viewport -->
-      <div class="hero-3d-stage">
-        <!-- Top HUD -->
-        <div class="stage-hud-top">
-          <span class="stage-badge">INTERACTIVE 3D ENGINE · THREE.JS</span>
-          <span class="stage-badge mono">[ROTATION: REALTIME]</span>
-        </div>
-
-        <!-- The Canvas Mount -->
-        <div id="three-canvas-container" title="Click and drag to rotate phone in 3D"></div>
-
-        <!-- Bottom Interactive HUD Controls -->
-        <div class="stage-hud-bottom">
-          <div class="hud-pill-group">
-            <button class="hud-btn active" data-hero-screen="chats">Chats Feed</button>
-            <button class="hud-btn" data-hero-screen="call">Live Call UI</button>
-            <button class="hud-btn" data-hero-screen="vault">Security Core</button>
-          </div>
-
-          <div class="hud-pill-group">
-            <button class="hud-btn" id="btn-explode-view">Explode Hardware</button>
-            <button class="hud-btn" id="btn-reset-view">Reset</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       INSTANT DOWNLOAD BANNER STRIP
-       ========================================================================= -->
-  <div class="install-strip-section">
-    <div class="container install-strip-grid">
-      <div class="strip-info">
-        <div class="strip-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v10m0 0l-4-4m4 4l4-4M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
-        </div>
-        <div class="strip-text">
-          <h4>Direct Browser Installation Ready</h4>
-          <p>Instant download from server repository · No Google Play account required · Signed & checksummed</p>
-        </div>
-      </div>
-
-      <div class="strip-actions">
-        <button class="btn btn-primary" data-trigger-download>
-          Download .APK (29.46 MB)
-        </button>
-        <a href="#admin-support" class="btn btn-secondary btn-sm">
-          Contact Admin
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- =========================================================================
-       3D ANIMATED SETUP PROCEDURE & WALKTHROUGH
-       ========================================================================= -->
-  <section class="setup-section" id="setup-procedure">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Interactive Hardware Walkthrough</span>
-        <h2 class="section-title">3D Guided Installation Protocol</h2>
-        <p class="section-subtitle">
-          Installing direct APKs outside Google Play requires a simple one-time permission. Follow the real-time 3D walkthrough below for clear, foolproof guidance on your device.
-        </p>
-      </div>
-
-      <div class="setup-walkthrough-grid">
-        
-        <!-- Left: 3D Animated Device Viewport -->
-        <div class="setup-3d-viewport">
-          <div class="setup-3d-overlay">
-            <span class="stage-badge mono">SIMULATED ANDROID INTERFACE</span>
-            <span class="stage-badge" style="color: var(--ember-light);">DRAG TO INSPECT 3D</span>
-          </div>
-
-          <div id="setup-three-canvas"></div>
-
-          <div class="setup-3d-footer">
-            <span class="stage-hint mono">Step updates trigger 3D perspective shifts</span>
-            <button class="btn btn-outline btn-sm" id="btn-autoplay-steps">
-              Auto-Play Demo
-            </button>
-          </div>
-        </div>
-
-        <!-- Right: Step Controller & OEM Device Selector -->
-        <div class="setup-stepper">
-          
-          <!-- STEP 1 -->
-          <div class="step-card active" data-step="1">
-            <div class="step-card-header">
-              <span class="step-number">STEP 01</span>
-              <span class="step-status">CURRENT ACTIVE</span>
-            </div>
-            <h3 class="step-card-title">1-Click Browser Download</h3>
-            <p class="step-card-body">
-              Click the <strong>Install Hero-Chats APK</strong> button. Your browser (Chrome, Samsung Internet, Edge, or Brave) will prompt: <em>"File might be harmful. Do you want to download Hero-Chats.apk anyway?"</em>
-            </p>
-            <div style="margin-top: 10px; font-family: var(--font-mono); font-size: 12px; color: var(--ember-light);">
-              Tap: <strong>"Download anyway"</strong> (This is standard Android notification for any APK downloaded outside the Google Play Store).
-            </div>
-          </div>
-
-          <!-- STEP 2 -->
-          <div class="step-card" data-step="2">
-            <div class="step-card-header">
-              <span class="step-number">STEP 02</span>
-              <span class="step-status">SECURITY PERMISSION</span>
-            </div>
-            <h3 class="step-card-title">Allow Unknown Apps / Installation Source</h3>
-            <p class="step-card-body">
-              Once downloaded, tap the file in your notification drawer or tap <em>Settings</em> on the Android prompt. Toggle <strong>"Allow from this source"</strong> to ON for your browser or file manager.
-            </p>
-
-            <!-- Device Specific Switcher -->
-            <div class="device-tabs">
-              <button class="device-tab-btn active" data-device="samsung">Samsung One UI</button>
-              <button class="device-tab-btn" data-device="pixel">Google Pixel</button>
-              <button class="device-tab-btn" data-device="xiaomi">Xiaomi / MIUI</button>
-              <button class="device-tab-btn" data-device="oneplus">OnePlus / Oppo</button>
-              <button class="device-tab-btn" data-device="oppovivo">Vivo / Realme</button>
-            </div>
-
-            <div class="device-guide-box">
-              <ol id="device-guide-list"></ol>
-            </div>
-          </div>
-
-          <!-- STEP 3 -->
-          <div class="step-card" data-step="3">
-            <div class="step-card-header">
-              <span class="step-number">STEP 03</span>
-              <span class="step-status">PACKAGE INSTALLER</span>
-            </div>
-            <h3 class="step-card-title">Verify & Tap "Install"</h3>
-            <p class="step-card-body">
-              The official Android Package Installer will display the Hero Chats logo, package name (<code>com.herochats.app</code>), and query: <em>"Do you want to install this application?"</em>
-            </p>
-            <div style="margin-top: 8px; font-size: 13px; color: var(--text-secondary);">
-              Tap <strong>INSTALL</strong>. Installation takes approximately 3 to 5 seconds.
-            </div>
-          </div>
-
-          <!-- STEP 4 -->
-          <div class="step-card" data-step="4">
-            <div class="step-card-header">
-              <span class="step-number">STEP 04</span>
-              <span class="step-status">ZERO-FRICTION START</span>
-            </div>
-            <h3 class="step-card-title">Launch & Connect Instantly</h3>
-            <p class="step-card-body">
-              Tap <strong>OPEN</strong>. Hero Chats launches directly with the high-performance UMG communication stack. Start private conversations, initiate ultra-low latency voice/video calls, and create mutual groups instantly.
-            </p>
-          </div>
-
-          <!-- Controls Bar -->
-          <div class="stepper-nav-controls">
-            <button class="btn btn-secondary btn-sm" id="btn-prev-step" disabled>
-              ← Previous Step
-            </button>
-            <div class="mono" style="font-size: 12px; color: var(--text-muted);">
-              4-STEP VERIFIED FLOW
-            </div>
-            <button class="btn btn-primary btn-sm" id="btn-next-step">
-              Next Step →
-            </button>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       USER-SIDE BENEFITS MATRIX
-       ========================================================================= -->
-  <section class="benefits-section" id="benefits">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Architecture Advantages</span>
-        <h2 class="section-title">Built For Users, Not Advertising Algorithms</h2>
-        <p class="section-subtitle">
-          Commercial messengers mine your private graph and throttle transfer speeds. Hero Chats strips out corporate overhead to prioritize direct device-to-device performance.
-        </p>
-      </div>
-
-      <div class="benefits-grid">
-        
-        <!-- Benefit 1 -->
-        <div class="benefit-card">
-          <div class="benefit-card-top">
-            <div class="benefit-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
-            <span class="benefit-tag">PRIVACY FIRST</span>
-          </div>
-          <h3 class="benefit-title">Zero Telemetry & Metadata Harvesting</h3>
-          <p class="benefit-desc">
-            No background trackers, no advertising identifiers (GAID), and no contact book exfiltration. Your identity and message history remain confined to your encrypted local sandbox.
-          </p>
-          <div class="benefit-metric">
-            <span>[TRACKERS DETECTED: 0]</span>
-          </div>
-        </div>
-
-        <!-- Benefit 2 -->
-        <div class="benefit-card">
-          <div class="benefit-card-top">
-            <div class="benefit-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-            </div>
-            <span class="benefit-tag">WEBRTC DIRECT</span>
-          </div>
-          <h3 class="benefit-title">Sub-20ms HD Voice & Video Calling</h3>
-          <p class="benefit-desc">
-            Direct peer-to-peer media negotiation. Calls bypass congested server transcoding queues, resulting in crystal-clear audio and synchronized high-definition video streams.
-          </p>
-          <div class="benefit-metric">
-            <span>[LATENCY: 14ms - 22ms AVERAGE]</span>
-          </div>
-        </div>
-
-        <!-- Benefit 3 -->
-        <div class="benefit-card">
-          <div class="benefit-card-top">
-            <div class="benefit-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            </div>
-            <span class="benefit-tag">LOSSLESS PIPELINE</span>
-          </div>
-          <h3 class="benefit-title">Uncompressed High-Res File Delivery</h3>
-          <p class="benefit-desc">
-            Send raw camera photos, 4K video clips, archive bundles, and binaries up to 2GB without lossy downscaling or pixel compression artifacts.
-          </p>
-          <div class="benefit-metric">
-            <span>[COMPRESSION: 0% LOSSLESS]</span>
-          </div>
-        </div>
-
-        <!-- Benefit 4 -->
-        <div class="benefit-card">
-          <div class="benefit-card-top">
-            <div class="benefit-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg>
-            </div>
-            <span class="benefit-tag">CAPACITOR OPTIMIZED</span>
-          </div>
-          <h3 class="benefit-title">Minimal Battery & RAM Consumption</h3>
-          <p class="benefit-desc">
-            Engineered with modern lean native hooks instead of bloated background daemons. Background battery footprint stays under 1.2% over a full 24-hour cycle.
-          </p>
-          <div class="benefit-metric">
-            <span>[STANDBY DRAIN: &lt; 1.2% / 24H]</span>
-          </div>
-        </div>
-
-        <!-- Benefit 5 -->
-        <div class="benefit-card">
-          <div class="benefit-card-top">
-            <div class="benefit-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            </div>
-            <span class="benefit-tag">UNIFIED ECOSYSTEM</span>
-          </div>
-          <h3 class="benefit-title">Simultaneous Web & Android Presence</h3>
-          <p class="benefit-desc">
-            Use the installed Android APK on the go, and jump straight into <code>hero-chats.vercel.app</code> when working from your desktop workstation with instant synchronization.
-          </p>
-          <div class="benefit-metric">
-            <span>[CROSS-PLATFORM SYNC READY]</span>
-          </div>
-        </div>
-
-        <!-- Benefit 6 -->
-        <div class="benefit-card">
-          <div class="benefit-card-top">
-            <div class="benefit-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <span class="benefit-tag">STORE INDEPENDENT</span>
-          </div>
-          <h3 class="benefit-title">Immune to App Store Censorship</h3>
-          <p class="benefit-desc">
-            Direct distribution ensures you always get the latest security features without waiting for multi-week approval cycles or policy-driven feature removals.
-          </p>
-          <div class="benefit-metric">
-            <span>[DIRECT APK DISTRIBUTION]</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       APP FEATURES & CORE ARCHITECTURE
-       ========================================================================= -->
-  <section class="features-section" id="features">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Core Specifications</span>
-        <h2 class="section-title">Engineered Capabilities & User Controls</h2>
-        <p class="section-subtitle">
-          Hero Chats combines minimalist ergonomics with heavy-duty communication tools. Explore the primary modules below.
-        </p>
-      </div>
-
-      <!-- Tab Navigation -->
-      <div class="feature-tabs-nav">
-        <button class="feature-tab-btn active" data-tab="messaging">Encrypted Channels</button>
-        <button class="feature-tab-btn" data-tab="calls">P2P Voice & Video</button>
-        <button class="feature-tab-btn" data-tab="groups">Mutual Communities</button>
-        <button class="feature-tab-btn" data-tab="moderation">Admin Escalation System</button>
-      </div>
-
-      <!-- Tab 1: Messaging -->
-      <div class="feature-tab-panel active" id="panel-messaging">
-        <div class="feature-info">
-          <h3 class="feature-title">Real-Time Messaging with Ephemeral Controls</h3>
-          <p class="feature-lead">
-            Communicate through direct 1-on-1 channels and broadcast rooms. Message delivery is instant, guaranteed by the lightweight UMG websocket network.
-          </p>
-          <ul class="feature-points">
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Message Auto-Purge:</strong> Configurable burn timers for sensitive discussions.</span>
-            </li>
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Reaction Badges & Quoting:</strong> Contextual replies with quick emoji tags.</span>
-            </li>
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Offline Queueing:</strong> Messages automatically transmit the microsecond network re-establishes.</span>
-            </li>
-          </ul>
-        </div>
-        <div class="feature-display-frame">
-          <div class="frame-top-bar">
-            <div class="frame-dots">
-              <span class="frame-dot"></span><span class="frame-dot"></span><span class="frame-dot"></span>
-            </div>
-            <span class="frame-title mono">HERO-CHATS // SECURE_THREAD_#09</span>
-          </div>
-          <div class="simulated-chat">
-            <div class="sim-message inbound">
-              <div>Elena: Check the new direct APK build. The audio pipeline latency dropped significantly.</div>
-              <div class="sim-meta">09:41 AM · VERIFIED</div>
-            </div>
-            <div class="sim-message outbound">
-              <div>You: Confirmed! Testing peer-to-peer file sharing right now.</div>
-              <div class="sim-meta">09:42 AM · DELIVERED ✓✓</div>
-            </div>
-            <div class="sim-message inbound">
-              <div>Elena: Flawless. Zero cloud logs generated.</div>
-              <div class="sim-meta">09:43 AM · ENCRYPTED</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tab 2: Calls -->
-      <div class="feature-tab-panel" id="panel-calls">
-        <div class="feature-info">
-          <h3 class="feature-title">High-Fidelity Audio & Video Calling</h3>
-          <p class="feature-lead">
-            Integrated WebRTC audio/video call engine with custom ringtones (including <code>ringtone1.mp3</code> built directly into the APK bundle) and bandwidth auto-adaptation.
-          </p>
-          <ul class="feature-points">
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Adaptive Bitrate:</strong> Automatically tunes audio bitrate between 32kbps to 256kbps for zero-drop stability on 3G, 4G, 5G, and Wi-Fi.</span>
-            </li>
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Noise Cancellation:</strong> Client-side acoustic echo cancellation and background noise suppression.</span>
-            </li>
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Call Encryption Tokens:</strong> Display visual safety fingerprint numbers to guarantee you are speaking to the authentic recipient.</span>
-            </li>
-          </ul>
-        </div>
-        <div class="feature-display-frame">
-          <div class="frame-top-bar">
-            <div class="frame-dots"><span class="frame-dot"></span><span class="frame-dot"></span></div>
-            <span class="frame-title mono">CALL_ENGINE // WEBRTC_ACTIVE</span>
-          </div>
-          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 14px;">
-            <div style="width: 72px; height: 72px; border: 2px solid var(--ember-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; color: var(--ember-light);">
-              🎙
-            </div>
-            <div style="font-family: var(--font-display); font-size: 20px; font-weight: 700;">Alex Vance</div>
-            <div class="mono" style="font-size: 13px; color: var(--ember-light);">STREAM: 256kbps HD AUDIO · [04:12]</div>
-            <div class="mono" style="font-size: 11px; color: var(--text-muted);">SAFETY TOKEN: 9402 - 1829 - 4401</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tab 3: Mutual Groups -->
-      <div class="feature-tab-panel" id="panel-groups">
-        <div class="feature-info">
-          <h3 class="feature-title">Mutual Community Discovery</h3>
-          <p class="feature-lead">
-            Find friends and colleagues already using Hero Chats without sacrificing your entire contact list to a central database.
-          </p>
-          <ul class="feature-points">
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Private Mutual Matching:</strong> Cryptographic zero-knowledge contact matching identifies mutual connections without revealing your non-user contacts.</span>
-            </li>
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Community Channels:</strong> Organize interest groups, developer circles, and project teams.</span>
-            </li>
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Admin Role Hierarchies:</strong> Granular moderator permissions, invite-only links, and anti-spam locks.</span>
-            </li>
-          </ul>
-        </div>
-        <div class="feature-display-frame">
-          <div class="frame-top-bar">
-            <div class="frame-dots"><span class="frame-dot"></span><span class="frame-dot"></span></div>
-            <span class="frame-title mono">COMMUNITY // MUTUAL_MATCHING</span>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 10px; justify-content: center; height: 100%;">
-            <div style="background: var(--bg-surface); padding: 12px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
-              <div>
-                <strong style="color: var(--text-primary); font-size: 14px;">Hero Chats Global Core</strong>
-                <div style="font-size: 12px; color: var(--text-muted);">2,410 Active Peers · Public Hub</div>
-              </div>
-              <span class="tech-chip">JOINED</span>
-            </div>
-            <div style="background: var(--bg-surface); padding: 12px; border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
-              <div>
-                <strong style="color: var(--text-primary); font-size: 14px;">UMG Developers Guild</strong>
-                <div style="font-size: 12px; color: var(--text-muted);">850 Members · Direct P2P Protocols</div>
-              </div>
-              <span class="tech-chip">MUTUAL</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tab 4: Moderation -->
-      <div class="feature-tab-panel" id="panel-moderation">
-        <div class="feature-info">
-          <h3 class="feature-title">Native "Report to Admin" Incident Escalation</h3>
-          <p class="feature-lead">
-            As built directly into the Hero Chats codebase (<code>Report to Admin</code>), safety is maintained by real human administrators rather than automated corporate ban bots.
-          </p>
-          <ul class="feature-points">
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>One-Tap Escalation:</strong> Flag abusive actors or security vulnerabilities directly to the operations staff.</span>
-            </li>
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Cryptographic Evidence Bundle:</strong> Transmits verifiable packet logs to resolve disputes swiftly.</span>
-            </li>
-            <li class="feature-point-item">
-              <span class="bullet">→</span>
-              <span><strong>Rapid Human Turnaround:</strong> Direct admin dispatch with guaranteed human review under 2 hours.</span>
-            </li>
-          </ul>
-        </div>
-        <div class="feature-display-frame">
-          <div class="frame-top-bar">
-            <div class="frame-dots"><span class="frame-dot"></span><span class="frame-dot"></span></div>
-            <span class="frame-title mono">SAFETY_DISPATCH // ADMIN_NODE</span>
-          </div>
-          <div style="padding: 20px; background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.25); height: 100%; display: flex; flex-direction: column; justify-content: center; gap: 12px;">
-            <div style="color: var(--danger-crimson); font-weight: bold; font-family: var(--font-mono); font-size: 13px;">
-              [ADMIN ESCALATION CONSOLE ACTIVE]
-            </div>
-            <div style="font-size: 13px; color: var(--text-secondary); line-height: 1.5;">
-              Users have direct access to contact administrators for security reports, bad-actor suppression, and system troubleshooting.
-            </div>
-            <div class="mono" style="font-size: 11px; color: var(--text-muted); padding-top: 8px; border-top: 1px dashed var(--border-subtle);">
-              DISPATCH ROUTE: /api/v1/admin/reports/urgent
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       ADMIN & SUPPORT OPERATIONS CENTER
-       ========================================================================= -->
-  <section class="admin-section" id="admin-support">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Operations & Governance</span>
-        <h2 class="section-title">Official Admin Dispatch & Support</h2>
-        <p class="section-subtitle">
-          Have questions regarding the APK installation, need assistance with your node, or wish to report a security incident? Reach out directly to the UMG Admin Operations Node.
-        </p>
-      </div>
-
-      <div class="admin-grid">
-        
-        <!-- Left: Official Admin Contact Dossier -->
-        <div class="admin-cards-column">
-          
-          <div class="admin-card">
-            <div class="admin-card-header">
-              <span class="admin-role">LEAD SYSTEM OPERATOR</span>
-              <span class="admin-status-indicator">ONLINE · READY</span>
-            </div>
-            <h3 class="admin-name">UMG Administration Team</h3>
-            
-            <div class="admin-details-list">
-              <div class="admin-detail-row">
-                <span class="admin-detail-label">Support Email:</span>
-                <span class="admin-detail-val">
-                  <a href="mailto:admin@herochats.app">admin@herochats.app</a>
-                </span>
-              </div>
-              <div class="admin-detail-row">
-                <span class="admin-detail-label">Direct Web Portal:</span>
-                <span class="admin-detail-val">
-                  <a href="https://hero-chats.vercel.app" target="_blank" rel="noopener noreferrer">hero-chats.vercel.app ↗</a>
-                </span>
-              </div>
-              <div class="admin-detail-row">
-                <span class="admin-detail-label">Telegram Station:</span>
-                <span class="admin-detail-val">
-                  <a href="https://t.me/HeroChatsAdmin" target="_blank" rel="noopener noreferrer">@HeroChatsAdmin</a>
-                </span>
-              </div>
-              <div class="admin-detail-row">
-                <span class="admin-detail-label">Response Horizon:</span>
-                <span class="admin-detail-val">&lt; 2 Hours (24/7 Operations)</span>
-              </div>
-              <div class="admin-detail-row">
-                <span class="admin-detail-label">Security Protocol:</span>
-                <span class="admin-detail-val">X25519 · ChaCha20</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Server Health Ticker -->
-          <div class="admin-card" style="background: var(--bg-void); border-color: var(--border-medium);">
-            <div class="admin-card-header">
-              <span class="admin-role mono">NETWORK TELEMETRY</span>
-              <span class="tech-chip live" style="font-size: 10px;">OPERATIONAL</span>
-            </div>
-            <div class="admin-details-list">
-              <div class="admin-detail-row">
-                <span class="admin-detail-label">WebRTC Gateway:</span>
-                <span class="admin-detail-val" style="color: #22c55e;">99.98% Uptime</span>
-              </div>
-              <div class="admin-detail-row">
-                <span class="admin-detail-label">Direct APK Repository:</span>
-                <span class="admin-detail-val" style="color: var(--ember-light);">Sync Active (Hero-Chats.apk)</span>
-              </div>
-              <div class="admin-detail-row">
-                <span class="admin-detail-label">Current Release:</span>
-                <span class="admin-detail-val">v1.0.4-universal</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Right: Direct Admin Dispatch Console -->
-        <div class="admin-console-box">
-          <div class="console-header">
-            <h3 class="console-title">Direct Encrypted Admin Dispatch</h3>
-            <p class="console-desc">
-              Transmit inquiries, bug discoveries, or installation questions directly to the administrator console.
-            </p>
-          </div>
-
-          <form class="console-form" id="admin-contact-form">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
-              <div class="form-group">
-                <label class="form-label" for="admin-input-name">Your Name / Handle</label>
-                <input type="text" class="form-input" id="admin-input-name" placeholder="e.g. HeroUser_42" required>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="admin-input-email">Your Contact Email</label>
-                <input type="email" class="form-input" id="admin-input-email" placeholder="user@domain.com" required>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="admin-input-category">Incident / Inquiry Category</label>
-              <select class="form-select" id="admin-input-category">
-                <option value="install">APK Installation & Permissions Assistance</option>
-                <option value="security">Security Vulnerability / Report to Admin</option>
-                <option value="feature">Feature Proposal / Protocol Feedback</option>
-                <option value="general">General Support & Node Connectivity</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="admin-input-message">Inquiry Details</label>
-              <textarea class="form-textarea" id="admin-input-message" placeholder="Provide details regarding your request or technical issue..." required></textarea>
-            </div>
-
-            <div class="form-feedback" id="contact-feedback"></div>
-
-            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
-              Transmit Encrypted Ticket →
-            </button>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       DOWNLOAD COMMAND CENTER & VERIFICATION
-       ========================================================================= -->
-  <section class="download-center-section" id="download">
-    <div class="container">
-      <div class="download-hub">
-        
-        <!-- Left: Download Actions & Specs -->
-        <div class="download-info">
-          <div style="display: flex; gap: 8px;">
-            <span class="tech-chip live">DIRECT SERVER FILE</span>
-            <span class="tech-chip">100% CLEAN</span>
-          </div>
-
-          <h2 class="download-heading">
-            Deploy Hero Chats to Your Android Device.
-          </h2>
-
-          <p class="download-desc">
-            Download the official <code>Hero-Chats.apk</code> package directly to your phone or desktop. No intermediary app store tracking, no advertising IDs, no artificial limitations.
-          </p>
-
-          <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center;">
+    <!-- DOWNLOAD -->
+    <section id="download" class="download-section">
+      <div class="container">
+        <div class="download-card">
+          <div class="download-info">
+            <h2>Get Hero Chats</h2>
+            <p class="download-meta">v1.0.4 · 29.46 MB · Android 8+</p>
             <button class="btn btn-primary btn-lg" data-trigger-download>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Download Hero-Chats.apk (29.46 MB)
+              Download
             </button>
-            <a href="https://hero-chats.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
-              Launch Web Client ↗
-            </a>
+            <p class="download-note">Also available as a web app at <a href="https://hero-chats.vercel.app" target="_blank" rel="noopener noreferrer">hero-chats.vercel.app</a></p>
           </div>
+          <div class="download-qr">
+            <div id="install-qrcode-box"></div>
+            <p class="qr-label">Scan to download on phone</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Hash Verification Box -->
-          <div class="hash-verify-box">
-            <div class="hash-verify-top">
-              <span>SHA-256 Authenticity Checksum</span>
-              <button class="btn btn-outline btn-sm" id="btn-copy-hash" style="padding: 2px 8px; font-size: 10px;">
-                Copy Hash
-              </button>
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+          <p>Have questions or need support? Send us a message.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form id="admin-contact-form" class="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="admin-input-name">Name</label>
+              <input type="text" class="form-control" id="admin-input-name" placeholder="Your name" required>
             </div>
-            <div class="hash-string" id="apk-sha256">
-              554f8d1f739839618eed3a8bca51d777b1f71e070da4bffd49f69f078f4c9ddf
+            <div class="form-group">
+              <label class="form-label" for="admin-input-email">Email</label>
+              <input type="email" class="form-control" id="admin-input-email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="admin-input-category">Subject</label>
+              <select class="form-select" id="admin-input-category">
+                <option value="Installation Help">Installation Help</option>
+                <option value="Bug Report">Bug Report</option>
+                <option value="Feature Request">Feature Request</option>
+                <option value="General Inquiry">General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="admin-input-message">Message</label>
+              <textarea class="form-textarea" id="admin-input-message" placeholder="Tell us how we can help..." rows="4" required></textarea>
+            </div>
+            <div class="form-feedback" id="contact-feedback"></div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+
+          <div class="contact-info">
+            <div class="contact-info-card">
+              <h3>💬 Telegram</h3>
+              <p>Reach us directly on Telegram for quick support.</p>
+              <a href="https://t.me/umgxero" target="_blank" rel="noopener noreferrer" class="contact-link">@umgxero →</a>
+            </div>
+            <div class="contact-info-card">
+              <h3>🌐 Web Portal</h3>
+              <p>Access Hero Chats from any browser.</p>
+              <a href="https://hero-chats.vercel.app" target="_blank" rel="noopener noreferrer" class="contact-link">hero-chats.vercel.app →</a>
             </div>
           </div>
         </div>
-
-        <!-- Right: Mobile QR Scanner Box -->
-        <div class="qr-install-column">
-          <span class="tech-chip" style="font-size: 10px;">SCAN WITH PHONE CAMERA</span>
-          
-          <div id="install-qrcode-box"></div>
-          
-          <div class="qr-label">
-            Point your Android camera at the QR code to begin immediate download on mobile.
-          </div>
-          <span class="mono" style="font-size: 11px; color: var(--ember-light);">
-            Package: com.herochats.app
-          </span>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- =========================================================================
-       FREQUENTLY ASKED QUESTIONS (TECHNICAL & GUIDANCE)
-       ========================================================================= -->
-  <section class="faq-section" id="faq">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Verification & Clarity</span>
-        <h2 class="section-title">Frequently Asked Questions</h2>
-      </div>
+  </main>
 
-      <div class="faq-grid">
-        
-        <div class="faq-item">
-          <h4 class="faq-item-title">Why does Android show "File might be harmful"?</h4>
-          <p class="faq-item-desc">
-            This is standard Android system behavior for <em>any</em> application downloaded directly through a browser instead of the Google Play Store. It simply indicates that Google hasn't processed the file through their commercial store pipeline. The APK is clean, lightweight, and signed.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <h4 class="faq-item-title">Is this APK safe and virus-free?</h4>
-          <p class="faq-item-desc">
-            Yes. The APK is built directly with modern open web standards via Capacitor and signed with SHA-256 hash <code>554f8d...c9ddf</code>. It does not request root access or predatory device permissions.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <h4 class="faq-item-title">Can I use Hero Chats on PC / Mac / iPhone?</h4>
-          <p class="faq-item-desc">
-            Yes! In addition to the Android APK, you can access the full Hero Chats client instantly in any modern desktop or mobile browser at <a href="https://hero-chats.vercel.app" target="_blank" rel="noopener noreferrer" style="color: var(--ember-light); text-decoration: underline;">hero-chats.vercel.app</a>.
-          </p>
-        </div>
-
-        <div class="faq-item">
-          <h4 class="faq-item-title">How do I update Hero Chats to future versions?</h4>
-          <p class="faq-item-desc">
-            When an update is released, you can download the newer APK directly from this page or inside the app. Installing the newer APK will seamlessly upgrade your application without erasing your chats or settings.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================================================================
-       FOOTER
-       ========================================================================= -->
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-left">
-        <div class="nav-brand-logo" style="width: 28px; height: 28px;">
-          <img src="extracted_assets/logo.svg" alt="Hero Chats Logo">
-        </div>
-        <div class="footer-copy">
-          © 2026 HERO CHATS · Developed by UMG · Direct Universal Build v1.0.4
-        </div>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="extracted_assets/ic_launcher_round.png" alt="Hero Chats" width="24" height="24">
+        <span>© 2026 Hero Chats · Built by UMG</span>
       </div>
-
-      <ul class="footer-links">
-        <li><a href="#hero">Overview</a></li>
-        <li><a href="#setup-procedure">3D Setup Guide</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#admin-support">Admin Dispatch</a></li>
-        <li><a href="https://hero-chats.vercel.app" target="_blank" rel="noopener noreferrer">Web App ↗</a></li>
-      </ul>
+      <nav class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </footer>
 
-  <!-- =========================================================================
-       INTERACTIVE DOWNLOAD HUD MODAL
-       ========================================================================= -->
+  <!-- DOWNLOAD MODAL -->
   <div class="install-modal-backdrop" id="install-modal">
     <div class="install-modal-box">
-      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">✕</button>
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close">✕</button>
 
-      <div style="display: flex; align-items: center; gap: 12px;">
-        <div class="nav-brand-logo" style="width: 32px; height: 32px;">
-          <img src="extracted_assets/logo.svg" alt="Logo">
-        </div>
+      <div class="modal-header">
+        <img src="extracted_assets/ic_launcher_round.png" alt="Logo" width="40" height="40">
         <div>
-          <h3 style="font-size: 18px; font-weight: 800;">Hero-Chats.apk</h3>
-          <div class="mono" style="font-size: 11px; color: var(--ember-light);">Direct Browser Stream Initiated</div>
+          <h3>Hero-Chats.apk</h3>
+          <p class="mono">Downloading 29.46 MB</p>
         </div>
       </div>
 
-      <!-- Simulated Download Progress Bar -->
-      <div>
-        <div class="modal-progress-bar">
-          <div class="modal-progress-fill" id="modal-progress-fill"></div>
-        </div>
-        <div class="mono" id="modal-progress-text" style="font-size: 11px; color: var(--text-muted); margin-top: 6px;">
-          Transferring 29.46 MB...
-        </div>
+      <div class="modal-progress-bar">
+        <div class="modal-progress-fill" id="modal-progress-fill"></div>
       </div>
+      <div class="modal-progress-text mono" id="modal-progress-text">Starting download...</div>
 
-      <!-- Next Steps Checklist -->
-      <div style="border-top: 1px solid var(--border-subtle); padding-top: 14px;">
-        <h4 style="font-size: 13px; font-weight: 700; margin-bottom: 10px; color: var(--text-primary);">
-          Android Installation Checklist:
-        </h4>
-        <ul class="modal-checklist">
-          <li>
-            <span class="num">01</span>
-            <span>Check your browser notifications for <code>Hero-Chats.apk</code> download completion.</span>
-          </li>
-          <li>
-            <span class="num">02</span>
-            <span>Tap the notification. If prompted, toggle <strong>"Allow from this source"</strong>.</span>
-          </li>
-          <li>
-            <span class="num">03</span>
-            <span>Tap <strong>Install</strong>, then tap <strong>Open</strong> to start chatting!</span>
-          </li>
-        </ul>
-      </div>
+      <ul class="modal-checklist">
+        <li><span class="step-num">1</span> Download completes in your browser</li>
+        <li><span class="step-num">2</span> Allow "Install from unknown sources" if prompted</li>
+        <li><span class="step-num">3</span> Tap Install → Open and start chatting!</li>
+      </ul>
 
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px;">
-        <a href="#setup-procedure" class="btn btn-secondary btn-sm" onclick="document.getElementById('install-modal').classList.remove('open')">
-          View 3D Step Walkthrough ↓
-        </a>
-        <button class="btn btn-primary btn-sm" onclick="document.getElementById('install-modal').classList.remove('open')">
-          Got It
-        </button>
-      </div>
+      <button class="btn btn-primary modal-done-btn" onclick="document.getElementById('install-modal').classList.remove('open')">Got It</button>
     </div>
   </div>
 
-  <!-- Custom Logic Scripts -->
-  <script src="js/three-app.js"></script>
+  <!-- Scripts -->
+  <script src="vendor/qrcode.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
