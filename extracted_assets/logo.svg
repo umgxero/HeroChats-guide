@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="hc-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9E2C" />
+      <stop offset="50%" stop-color="#F97316" />
+      <stop offset="100%" stop-color="#DD4B00" />
+    </linearGradient>
+    <linearGradient id="hc-glow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#FDBA74" />
+    </linearGradient>
+  </defs>
+  <!-- Stylized Wing H / Emblem matching Hero Chats geometry -->
+  <path d="M28 16 L48 16 L32 104 L12 104 Z" fill="url(#hc-amber)" />
+  <path d="M72 16 L92 16 L76 104 L56 104 Z" fill="url(#hc-glow)" opacity="0.92" />
+  <path d="M34 50 L84 50 L78 68 L28 68 Z" fill="url(#hc-amber)" />
+  <polygon points="96,20 108,20 100,42 88,42" fill="#FF8A00" opacity="0.8" />
+</svg>

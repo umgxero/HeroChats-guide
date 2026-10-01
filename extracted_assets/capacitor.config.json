@@ -1,0 +1,9 @@
+{
+	"appId": "com.herochats.app",
+	"appName": "Hero Chats",
+	"webDir": "build",
+	"server": {
+		"url": "https://hero-chats.vercel.app",
+		"cleartext": true
+	}
+}
